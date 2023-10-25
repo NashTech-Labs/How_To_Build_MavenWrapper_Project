@@ -10,5 +10,3 @@ RUN ./mvnw clean install
 COPY /target/my-app-1.0-SNAPSHOT.jar ./demo.jar
 RUN java  -jar target/*.jar
 ENTRYPOINT ["java", "-jar", "./demo.jar"]
-
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
